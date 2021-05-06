@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 14px;
+  text-align: center;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+}
+.bg-blk {
+  background: hsl(233, 47%, 7%);
+  color: white;
+}
+.img-container {
+  background-image: url("../images/image-header-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  width: 100%;
+  height: 11rem;
+}
+.img {
+  background-color: hsla(277, 64%, 50%, 0.6);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.card {
+  height: 40rem;
+  width: 20rem;
+  margin: 4rem 2rem;
+  border: 1px solid hsl(233, 47%, 7%);
+  border-radius: 1rem;
+  background-color: hsl(244, 38%, 16%);
+  display: flex;
+  flex-direction: column-reverse;
+}
+.headline h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: "Lexend Deca";
+  margin: 1rem 2rem;
+}
+.headline .font-focused {
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: "Lexend Deca";
+  color: hsl(277, 64%, 61%);
+}
+.sub-text {
+  color: hsla(0, 0%, 100%, 0.75);
+  margin: 0 2rem;
+  line-height: 1.5rem;
+  text-align: center;
+}
+.tile {
+  height: 1rem;
+  padding: 2rem 0;
+}
+.focus-label {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: hsl(0, 0%, 100%);
+}
+.sub-label {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Inter";
+  font-size: 0.6rem;
+  font-weight: 700;
+  color: hsla(0, 0%, 100%, 0.6);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.tile-container {
+  margin-bottom: 1rem;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column-reverse;
+  text-align: center;
+}
+.tile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column-reverse;
+  text-align: center;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 600px) {
+  .center {
+    flex-direction: row;
+  }
+  .card {
+    height: 30rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    border-radius: 0;
+    text-align: left;
+    margin: 10%;
+  }
+  .img-container {
+    height: 100%;
+    border-radius: 0;
+  }
+  .img {
+    border-radius: 0;
+  }
+  .text-container,
+  .tile-container {
+    margin: 10%;
+  }
+  .tile-container {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .focus-label {
+    margin-bottom: 1rem;
+  }
+  .sub-text {
+    text-align: left;
+  }
+}
